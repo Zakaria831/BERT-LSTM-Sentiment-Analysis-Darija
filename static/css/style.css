@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #5cb85c;
+    color: white;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+.card {
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+#sentiment-result p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+    border-radius: 5px;
+}
+
+#loading-spinner {
+    margin-top: 20px;
+}
+
+.alert {
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 400px;
+    width: 400px;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.btn-danger {
+    margin-left: 10px;
+}
+
+.animate-btn {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.animate-btn:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: rgba(255, 255, 255, 0.15);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease-out;
+    border-radius: 50%;
+}
+
+.animate-btn:hover:before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
